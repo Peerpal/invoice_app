@@ -11,6 +11,7 @@ class InvoiceApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Invoice App',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         
         primarySwatch: Colors.blue,
