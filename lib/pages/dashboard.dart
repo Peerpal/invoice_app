@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_awesome_icons/line_awesome_icons.dart';
 import 'package:invoice/utils/color_converter.dart';
 
 class Dashboard extends StatelessWidget {
@@ -55,6 +56,298 @@ class Dashboard extends StatelessWidget {
                 ),
               )
             ],
+          ),
+          SizedBox(height: 130),
+          Padding(
+            padding: const EdgeInsets.all(15),
+            child: Text(
+              "TODAY, 11 JUL",
+              style: TextStyle(
+                color: Colors.grey.shade500,
+                fontSize: 13,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15.0),
+            child: Flex(
+              direction: Axis.vertical,
+              children: <Widget>[
+                Flex(
+                  direction: Axis.horizontal,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Row(
+                      children: <Widget>[
+                        Container(
+                          width: 50.0,
+                          height: 50.0,
+                          decoration: BoxDecoration(
+                            color: HexColor("5B50F2"),
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          child: RotatedBox(
+                            quarterTurns: 3,
+                            child: Icon(
+                              LineAwesomeIcons.send,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 10),
+                        Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                "Virgin Airlines",
+                                style: TextStyle(
+                                  color: HexColor("1F2F45"),
+                                  fontSize: 17.5,
+                                ),
+                              ),
+                              SizedBox(height: 5),
+                              Text(
+                                "Buy Tickets",
+                                style: TextStyle(
+                                  color: HexColor("9A9EA9"),
+                                  fontSize: 13,
+                                ),
+                              )
+                            ])
+                      ],
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: <Widget>[
+                      Text(
+                        "- \$ 250.00",
+                        style: TextStyle(
+                          color: HexColor("F96069"),
+                          fontSize: 19,
+                        ),
+                      ),
+                      Text(
+                        "18:4",
+                        style: TextStyle(
+                          color: HexColor("BCBEC7"),
+                          fontSize: 15.2,
+                        ),
+                      )
+                    ])
+                  ],
+                ),
+                SizedBox(height: 20),
+                Flex(
+                  direction: Axis.horizontal,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Row(
+                      children: <Widget>[
+                        Container(
+                          width: 50.0,
+                          height: 50.0,
+                          decoration: BoxDecoration(
+                            color: HexColor("4DBAB0"),
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          child: RotatedBox(
+                            quarterTurns: 3,
+                            child: Icon(
+                              LineAwesomeIcons.bank,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 10),
+                        Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                "Bank Transfer",
+                                style: TextStyle(
+                                  color: HexColor("1F2F45"),
+                                  fontSize: 17.5,
+                                ),
+                              ),
+                              SizedBox(height: 5),
+                              Text(
+                                "Transfer",
+                                style: TextStyle(
+                                  color: HexColor("9A9EA9"),
+                                  fontSize: 13,
+                                ),
+                              )
+                            ])
+                      ],
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: <Widget>[
+                      Text(
+                        "- \$ 12,500.00",
+                        style: TextStyle(
+                          color: HexColor("3EB6AA"),
+                          fontSize: 19,
+                        ),
+                      ),
+                      Text(
+                        "12:3",
+                        style: TextStyle(
+                          color: HexColor("BCBEC7"),
+                          fontSize: 15.2,
+                        ),
+                      )
+                    ])
+                  ],
+                ),
+              ],
+            ),
+          ),
+        
+        Padding(
+            padding: const EdgeInsets.only(top: 30, left: 15, bottom: 15),
+            child: Text(
+              "YESTERDAY, 10 JUL",
+              style: TextStyle(
+                color: Colors.grey.shade500,
+                fontSize: 13,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15.0),
+            child: Flex(
+              direction: Axis.vertical,
+              children: <Widget>[
+                Flex(
+                  direction: Axis.horizontal,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Row(
+                      children: <Widget>[
+                        Container(
+                          width: 50.0,
+                          height: 50.0,
+                          decoration: BoxDecoration(
+                            color: HexColor("FB6D75"),
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          child: RotatedBox(
+                            quarterTurns: 3,
+                            child: Icon(
+                              LineAwesomeIcons.credit_card,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 10),
+                        Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                "Dribble",
+                                style: TextStyle(
+                                  color: HexColor("1F2F45"),
+                                  fontSize: 17.5,
+                                ),
+                              ),
+                              SizedBox(height: 5),
+                              Text(
+                                "Payment Account",
+                                style: TextStyle(
+                                  color: HexColor("9A9EA9"),
+                                  fontSize: 13,
+                                ),
+                              )
+                            ])
+                      ],
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: <Widget>[
+                      Text(
+                        "- \$ 15.00",
+                        style: TextStyle(
+                          color: HexColor("F96069"),
+                          fontSize: 19,
+                        ),
+                      ),
+                      Text(
+                        "20:1",
+                        style: TextStyle(
+                          color: HexColor("BCBEC7"),
+                          fontSize: 15.2,
+                        ),
+                      )
+                    ])
+                  ],
+                ),
+                SizedBox(height: 20),
+                Flex(
+                  direction: Axis.horizontal,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Row(
+                      children: <Widget>[
+                        Container(
+                          width: 50.0,
+                          height: 50.0,
+                          decoration: BoxDecoration(
+                            color: HexColor("FFB642"),
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          child: RotatedBox(
+                            quarterTurns: 3,
+                            child: Icon(
+                              LineAwesomeIcons.backward,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 10),
+                        Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                "Cashback",
+                                style: TextStyle(
+                                  color: HexColor("1F2F45"),
+                                  fontSize: 17.5,
+                                ),
+                              ),
+                              SizedBox(height: 5),
+                              Text(
+                                "Reversal",
+                                style: TextStyle(
+                                  color: HexColor("9A9EA9"),
+                                  fontSize: 13,
+                                ),
+                              )
+                            ])
+                      ],
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: <Widget>[
+                      Text(
+                        "- \$ 10.50",
+                        style: TextStyle(
+                          color: HexColor("3EB6AA"),
+                          fontSize: 19,
+                        ),
+                      ),
+                      Text(
+                        "18:2",
+                        style: TextStyle(
+                          color: HexColor("BCBEC7"),
+                          fontSize: 15.2,
+                        ),
+                      )
+                    ])
+                  ],
+                ),
+              ],
+            ),
           ),
         ],
       ),
