@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:invoice/components/chart_component.dart';
 import 'package:invoice/utils/color_converter.dart';
 import 'package:line_awesome_icons/line_awesome_icons.dart';
 
@@ -50,6 +51,61 @@ class DashboardInfoComponent extends StatelessWidget {
                 child: Container(
                   width: 360.0,
                   height: 280.0,
+                  padding: EdgeInsets.all(20),
+                  child: Flex(
+                    direction: Axis.vertical,
+                    children: <Widget>[
+                      Expanded(
+                          child: Container(
+                        child: ChartComponent(),
+                      )),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 20),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  "Income",
+                                  style: TextStyle(
+                                      color: HexColor("5D6878"), fontSize: 14),
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  "\$12,300.40",
+                                  style: TextStyle(
+                                      color: HexColor("35B2A6"), fontSize: 18),
+                                ),
+                              ],
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  "Spent",
+                                  style: TextStyle(
+                                      color: HexColor("5D6878"), fontSize: 14),
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  "\$6,420.00",
+                                  style: TextStyle(
+                                      color: HexColor("F96069"), fontSize: 18),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                      
+                    ],
+                  ),
                 ),
               ),
             )
@@ -121,14 +177,14 @@ class DashboardInfoComponent extends StatelessWidget {
                           "- \$ 250.00",
                           style: TextStyle(
                             color: HexColor("F96069"),
-                            fontSize: 19,
+                            fontSize: 15,
                           ),
                         ),
                         Text(
                           "18:4",
                           style: TextStyle(
                             color: HexColor("BCBEC7"),
-                            fontSize: 15.2,
+                            fontSize: 13,
                           ),
                         )
                       ])
@@ -148,12 +204,9 @@ class DashboardInfoComponent extends StatelessWidget {
                           color: HexColor("4DBAB0"),
                           borderRadius: BorderRadius.circular(15),
                         ),
-                        child: RotatedBox(
-                          quarterTurns: 3,
-                          child: Icon(
-                            LineAwesomeIcons.bank,
-                            color: Colors.white,
-                          ),
+                        child: Icon(
+                          LineAwesomeIcons.bank,
+                          color: Colors.white,
                         ),
                       ),
                       SizedBox(width: 10),
@@ -185,14 +238,14 @@ class DashboardInfoComponent extends StatelessWidget {
                           "- \$ 12,500.00",
                           style: TextStyle(
                             color: HexColor("3EB6AA"),
-                            fontSize: 19,
+                            fontSize: 15,
                           ),
                         ),
                         Text(
                           "12:3",
                           style: TextStyle(
                             color: HexColor("BCBEC7"),
-                            fontSize: 15.2,
+                            fontSize: 13,
                           ),
                         )
                       ])
@@ -257,23 +310,24 @@ class DashboardInfoComponent extends StatelessWidget {
                     ],
                   ),
                   Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: <Widget>[
-                        Text(
-                          "- \$ 15.00",
-                          style: TextStyle(
-                            color: HexColor("F96069"),
-                            fontSize: 19,
-                          ),
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: <Widget>[
+                      Text(
+                        "- \$ 15.00",
+                        style: TextStyle(
+                          color: HexColor("F96069"),
+                          fontSize: 15,
                         ),
-                        Text(
-                          "20:1",
-                          style: TextStyle(
-                            color: HexColor("BCBEC7"),
-                            fontSize: 15.2,
-                          ),
-                        )
-                      ])
+                      ),
+                      Text(
+                        "20:1",
+                        style: TextStyle(
+                          color: HexColor("BCBEC7"),
+                          fontSize: 13.2,
+                        ),
+                      ),
+                    ],
+                  )
                 ],
               ),
               SizedBox(height: 20),
@@ -324,14 +378,14 @@ class DashboardInfoComponent extends StatelessWidget {
                           "- \$ 10.50",
                           style: TextStyle(
                             color: HexColor("3EB6AA"),
-                            fontSize: 19,
+                            fontSize: 15,
                           ),
                         ),
                         Text(
                           "18:2",
                           style: TextStyle(
                             color: HexColor("BCBEC7"),
-                            fontSize: 15.2,
+                            fontSize: 13,
                           ),
                         )
                       ])
